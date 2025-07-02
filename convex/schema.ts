@@ -13,7 +13,7 @@ export default defineSchema({
     }).index("byClerkId", ["clerkId"]),
 
     plans:defineTable({
-        userId:v.id("users"),
+        userId:v.string(),
         name:v.string(),
         workoutPlan:v.object({
             schedule:v.array(v.string()),
